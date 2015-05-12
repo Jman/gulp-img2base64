@@ -1,7 +1,6 @@
 # gulp-img2base64
 
-> Encode images to base64 and generate stylesheet file, ported from [grunt-img2base64](https://github
-.com/Jman/grunt-img2base64) plugin
+> Encode images to base64 and generate stylesheet file, ported from [grunt-img2base64](https://github.com/Jman/grunt-img2base64) plugin
 
 ## Getting Started
 
@@ -73,17 +72,5 @@ gulp.src('./src/img/icons/*')
 
 ## Release History
 
-#### 0.0.5
-  * Fix bug with wrong height
-
-#### 0.0.4
-  * Add image size support 
-
-#### 0.0.3
-  * Add `postfix` option 
-
-#### 0.0.2
-  * Add support for PNG, JPG, GIF files 
-
 #### 0.0.1
-  * Initial Release (SVG files only)
+  * port [grunt-img2base64](https://github.com/Jman/grunt-img2base64) plugin

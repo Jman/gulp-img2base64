@@ -25,7 +25,6 @@ var gutil = require('gulp-util'),
       'png': 'png'
     };
 
-_.templateSettings.interpolate = /{{([\s\S]+?)}}/g;
 template = _.template(template);
 
 module.exports = function(options) {
@@ -33,6 +32,7 @@ module.exports = function(options) {
   var content = [];
 
   var opt = _.extend({
+    use_quotes: true,
     filename: 'icons.css',
     prefix : '.',
     postfix : ''
@@ -60,7 +60,8 @@ module.exports = function(options) {
           base64 : file.contents.toString('base64'),
           width: dimensions.width,
           height: dimensions.height,
-          type : types[ext]
+          type : types[ext],
+          use_quotes: opt.use_quotes
       }));
       callback();
     }

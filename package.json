@@ -1,7 +1,7 @@
 {
   "name": "gulp-img2base64",
   "description": "Encode images to base64 and create css file",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "homepage": "https://github.com/Jman/gulp-img2base64",
   "author": {
     "name": "Eugene Tereschenko",
@@ -24,7 +24,7 @@
     "node": ">= 0.8.0"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "gulp"
   },
   "devDependencies": {
     "gulp": "^3.8.11",

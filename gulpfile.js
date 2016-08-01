@@ -21,7 +21,7 @@ gulp.task('img2base64-postfix', function(){
 });
 gulp.task('img2base64-main', function(){
   return gulp.src('./test/fixtures/*')
-    .pipe(img2base64({filename:'main.css', prefix:'.icon-', postfix:' span'}))
+    .pipe(img2base64({filename:'main.css', prefix:'.icon-', postfix:' span', use_quotes: false}))
     .pipe(gulp.dest('./tmp/'));
 });
 
